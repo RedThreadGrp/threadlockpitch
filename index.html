@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACX0lEQVR4nO3UT0gUURwH8O/vvRlXSx..."/>
+    <link rel="icon" type="image/png" href="/favicon-threadlock.png">
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -47,20 +47,8 @@
             line-height: 1;
         }
         .icon-header {
-            font-size: 1.75rem;
-            font-family: monospace;
-            color: #0c2b3b;
-            margin-right: 0.25rem;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 1.75em;
-            height: 1.75em;
-        }
-        .icon-header::before {
-            content: "\29C9";
-            color: #0c2b3b;
+            font-size: 0; /* Hide original icon */
+            margin-right: 0.5rem;
         }
         .highlight-header {
             color: #f77b00;
@@ -70,8 +58,26 @@
             vertical-align: super;
             margin-left: 0.1em;
         }
+        .logo-img {
+            height: 32px;
+            width: auto;
+            margin-right: 0.5rem;
+        }
     </style>
 </head>
+<body class="bg-gray-50 text-gray-700">
+<header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+    <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+        <a href="#" class="flex items-center">
+            <div class="logo-container-header">
+                <img src="/threadlock-logo-header.png" alt="ThreadLock Logo" class="logo-img">
+                <span style="color:#0c2b3b;">Thread</span><span class="highlight-header">Lock</span><sup class="tm-header">TM</sup>
+            </div>
+        </a>
+    </nav>
+</header>
+</body>
+</html>
 <body class="bg-gray-50 text-gray-700">
 
     <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
