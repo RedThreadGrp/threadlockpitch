@@ -9,16 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Chosen Palette: Primary Background: gray-50, Content Background: white, Dark Blue/Slate: #4D5A6B, Accent Orange: amber-500, Text: gray-900, gray-700 -->
-    <!-- Application Structure Plan: The SPA is designed as a thematic, top-down narrative for an investor. It starts with a high-level summary (The Problem & Opportunity), dives into the product (Our Solution), presents the investment details (The Business Case), and concludes with forward-looking statements (Roadmap & Vision). This structure logically groups related content from the slides into cohesive sections, creating a more intuitive and persuasive user flow than a linear presentation. Navigation is handled by a sticky header for easy access to all key sections. -->
-    <!-- Visualization & Content Choices: 
-        - Hero Stats -> Goal: Inform/Impact -> Viz: Animated Counters -> Interaction: On-scroll animation -> Justification: Grabs attention and highlights the scale of the problem immediately -> Library/Method: Vanilla JS.
-        - Case Breakdown -> Goal: Compare -> Viz: Bar Chart -> Interaction: Hover tooltips -> Justification: Clearly compares the volume of different case types -> Library/Method: Chart.js.
-        - Solution Flow -> Goal: Organize/Explain -> Viz: Tabbed Interface -> Interaction: Click to reveal content -> Justification: Condenses detailed product features into a clean, user-driven exploratory component -> Library/Method: Vanilla JS.
-        - Financial Projections -> Goal: Compare/Change -> Viz: Line Chart -> Interaction: Hover tooltips -> Justification: Shows the relationship and trend of revenue vs. expenses over 5 years -> Library/Method: Chart.js.
-        - All other elements use styled HTML/CSS to present information in clear, digestible cards and lists, avoiding information overload.
-    -->
-    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACX0lEQVR4nO3UT0gUURwH8O/vvRlXSx..."/>
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -37,48 +28,47 @@
             }
         }
         .tab-active {
-            border-color: #f59e0b; /* amber-500 */
-            color: #1a202c; /* dark text */
+            border-color: #f59e0b;
+            color: #1a202c;
             font-weight: 600;
         }
         .tab-inactive {
             border-color: transparent;
-            color: #4a5568; /* lighter text */
+            color: #4a5568;
         }
         .bg-dark-slate {
             background-color: #4D5A6B;
         }
-        /* Logo Specific Styles */
         .logo-container-header {
             display: flex;
             align-items: center;
             font-weight: bold;
-            font-size: 1.5rem; /* Adjusted for header size */
-            line-height: 1; /* Ensure text aligns well */
+            font-size: 1.5rem;
+            line-height: 1;
         }
         .icon-header {
-            font-size: 1.75rem; /* Adjusted for header size */
+            font-size: 1.75rem;
             font-family: monospace;
-            color: #0c2b3b; /* Dark blue from logo image */
-            margin-right: 0.25rem; /* Reduced margin */
+            color: #0c2b3b;
+            margin-right: 0.25rem;
             position: relative;
-            display: flex; /* Use flex to center content */
+            display: flex;
             align-items: center;
             justify-content: center;
-            width: 1.75em; /* Adjust width to contain icon */
-            height: 1.75em; /* Adjust height to contain icon */
+            width: 1.75em;
+            height: 1.75em;
         }
         .icon-header::before {
-            content: "⧉";
+            content: "\29C9";
             color: #0c2b3b;
         }
         .highlight-header {
-            color: #f77b00; /* Orange from logo image */
+            color: #f77b00;
         }
         .tm-header {
-            font-size: 0.4em; /* Adjusted for header size */
+            font-size: 0.4em;
             vertical-align: super;
-            margin-left: 0.1em; /* Reduced margin */
+            margin-left: 0.1em;
         }
     </style>
 </head>
